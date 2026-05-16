@@ -1,11 +1,11 @@
 {
   "manifest_version": 3,
-  "name": "X Timeline Local Capture",
-  "description": "Read current-tab X Network responses and save loaded timeline JSON and tweet body images locally.",
+  "name": "X 时间线下载",
+  "description": "保存当前 X 页面已加载的时间线 JSON，并生成本地推文导出。",
   "version": "0.1.0",
   "action": {
     "default_popup": "popup.html",
-    "default_title": "X Capture"
+    "default_title": "X 时间线下载"
   },
   "background": {
     "service_worker": "background.mjs",
