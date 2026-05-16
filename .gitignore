@@ -1,0 +1,6 @@
+.tmp-tests/
+native_host/captures/
+native_host/com.master.x_tweet_fetcher.json
+__pycache__/
+*.pyc
+projectneed.md

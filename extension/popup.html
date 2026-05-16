@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <title>X Capture</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>X Capture</h1>
+        <span id="status" class="status">未监听</span>
+      </header>
+
+      <dl class="counts">
+        <div>
+          <dt>Raw JSON</dt>
+          <dd id="rawJson">0</dd>
+        </div>
+        <div>
+          <dt>Tweets</dt>
+          <dd id="tweets">0</dd>
+        </div>
+        <div>
+          <dt>Images</dt>
+          <dd id="images">0</dd>
+        </div>
+        <div>
+          <dt>Errors</dt>
+          <dd id="errors">0</dd>
+        </div>
+      </dl>
+
+      <p class="session-id">Session: <span id="sessionId">无</span></p>
+      <p id="tabUrl" class="tab-url"></p>
+      <p id="lastError" class="error" hidden></p>
+
+      <div class="actions">
+        <button id="startButton" type="button">开始监听</button>
+        <button id="stopButton" type="button">停止监听</button>
+      </div>
+
+      <section class="sessions">
+        <div class="section-heading">
+          <h2>抓取记录</h2>
+          <button id="refreshButton" class="icon-button" type="button" title="刷新记录">刷新</button>
+        </div>
+        <div id="sessionsList" class="sessions-list"></div>
+      </section>
+    </main>
+
+    <script type="module" src="popup.mjs"></script>
+  </body>
+</html>

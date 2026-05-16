@@ -1,0 +1,222 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #0f1419;
+  color: #e7e9ea;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  margin: 0;
+  min-width: 360px;
+}
+
+main {
+  padding: 14px;
+}
+
+header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+h1 {
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+}
+
+.status {
+  border: 1px solid #2f3336;
+  border-radius: 999px;
+  color: #8b98a5;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 3px 8px;
+}
+
+.status.listening {
+  border-color: #00ba7c;
+  color: #00ba7c;
+}
+
+.counts {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 0 0 12px;
+}
+
+.counts div {
+  background: #16181c;
+  border: 1px solid #2f3336;
+  border-radius: 6px;
+  padding: 8px;
+}
+
+dt {
+  color: #8b98a5;
+  font-size: 11px;
+  margin-bottom: 4px;
+}
+
+dd {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.tab-url,
+.error,
+.session-id {
+  color: #8b98a5;
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0 0 10px;
+  overflow-wrap: anywhere;
+}
+
+.error {
+  color: #ff7a7a;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+button {
+  background: #eff3f4;
+  border: 0;
+  border-radius: 999px;
+  color: #0f1419;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 700;
+  min-height: 34px;
+  padding: 0 12px;
+}
+
+.actions button {
+  flex: 1;
+}
+
+button:disabled {
+  cursor: default;
+  opacity: 0.45;
+}
+
+.sessions {
+  border-top: 1px solid #2f3336;
+  padding-top: 12px;
+}
+
+.section-heading {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+h2 {
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0;
+}
+
+.icon-button,
+.secondary-button,
+.danger-button {
+  background: transparent;
+  border: 1px solid #2f3336;
+  color: #e7e9ea;
+  min-height: 28px;
+  padding: 0 10px;
+}
+
+.sessions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 340px;
+  overflow-y: auto;
+}
+
+.session-item {
+  background: #16181c;
+  border: 1px solid #2f3336;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.session-title-row,
+.session-footer {
+  display: flex;
+  gap: 8px;
+  justify-content: space-between;
+}
+
+.session-title-row {
+  align-items: center;
+}
+
+.session-footer {
+  align-items: stretch;
+  flex-direction: column;
+}
+
+h3 {
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.session-badge {
+  border: 1px solid #536471;
+  border-radius: 999px;
+  color: #8b98a5;
+  flex: 0 0 auto;
+  font-size: 11px;
+  line-height: 14px;
+  padding: 2px 6px;
+}
+
+.session-badge.active {
+  border-color: #00ba7c;
+  color: #00ba7c;
+}
+
+.session-meta,
+.session-url,
+.session-path,
+.empty {
+  color: #8b98a5;
+  font-size: 11px;
+  line-height: 15px;
+  margin: 6px 0 0;
+  overflow-wrap: anywhere;
+}
+
+.session-path {
+  margin-right: 0;
+}
+
+.session-actions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+
+.danger-button {
+  border-color: #5f2a32;
+  color: #ff7a7a;
+  flex: 0 0 auto;
+}
+
+.secondary-button {
+  flex: 0 0 auto;
+}

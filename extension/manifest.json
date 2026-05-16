@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "X Timeline Local Capture",
+  "description": "Read current-tab X Network responses and save loaded timeline JSON and tweet body images locally.",
+  "version": "0.1.0",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "X Capture"
+  },
+  "background": {
+    "service_worker": "background.mjs",
+    "type": "module"
+  },
+  "permissions": [
+    "debugger",
+    "nativeMessaging",
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://x.com/*",
+    "https://twitter.com/*",
+    "https://api.x.com/*",
+    "https://api.twitter.com/*",
+    "https://pbs.twimg.com/*"
+  ],
+  "minimum_chrome_version": "116"
+}
