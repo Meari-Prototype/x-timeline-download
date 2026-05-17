@@ -4,6 +4,7 @@ const tweetsEl = document.getElementById('tweets');
 const imagesEl = document.getElementById('images');
 const errorsEl = document.getElementById('errors');
 const sessionIdEl = document.getElementById('sessionId');
+const extensionIdEl = document.getElementById('extensionId');
 const tabUrlEl = document.getElementById('tabUrl');
 const lastErrorEl = document.getElementById('lastError');
 const startButton = document.getElementById('startButton');
@@ -12,6 +13,8 @@ const refreshButton = document.getElementById('refreshButton');
 const sessionsListEl = document.getElementById('sessionsList');
 
 let currentState = { status: 'idle', sessionId: null };
+
+extensionIdEl.textContent = chrome.runtime.id ?? '未知';
 
 startButton.addEventListener('click', async () => {
   await runAction({ type: 'start_current_tab' });
